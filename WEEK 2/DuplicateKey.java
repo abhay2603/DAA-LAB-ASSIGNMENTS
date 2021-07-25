@@ -67,7 +67,6 @@ class DuplicateKey
  
         // pass false for the last occurrence
         int last = binarySearch(arr, key, false);
- 
         int c = last - first + 1;   //to count no of occurences
  
         if (first != -1) 
