@@ -6,7 +6,6 @@ class binarysearch
     static int bsearch(int []arr,int l,int h, int x)
     {
       
-        
         if(l>h)                        //base case
         return -1;
         int mid=(l+h)/2;
