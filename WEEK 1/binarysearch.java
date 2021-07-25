@@ -1,13 +1,16 @@
+
 import java.util.*;
 class binarysearch
 {
-    
-    public static int bsearch(int []arr,int l,int h, int x)
+    static int c=0;
+    static int bsearch(int []arr,int l,int h, int x)
     {
+      
         
         if(l>h)                        //base case
         return -1;
         int mid=(l+h)/2;
+        c+=1;
         
         if(arr[mid]==x)
         return mid;
@@ -38,10 +41,12 @@ class binarysearch
         if (found_index == -1)
         {
             System.out.println("Element is not present in array");
+            System.out.println("comparisons="+c);
         }
         else
         {
             System.out.println("Element is present at index" + found_index);
+            System.out.println("comparisons="+c);
         }
         sc.close();
     }
