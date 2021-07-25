@@ -4,16 +4,15 @@ public class threeindices
     public static void main(String args[])
     {
     Scanner sc=new Scanner(System.in);
-    // System.out.println("Enter the number of test cases");
     int t=sc.nextInt();//test-cases
     while(t-- != 0)
     {
-        // System.out.println("enter the array size");
+        
         int n=sc.nextInt(); // array size
         int arr[]=new int[n]; //array
-        int hashArr[] = new int[1000]; // initialised by 0 by default. HASH TABLE
-        // System.out.println("enter the array elements");
-        for(int i = 0; i < n; i++)
+        int hashArr[] = new int[1000]; // initialised 0 by default
+        
+        for(int i = 0; i < n; i++) //entering array elements
         {
             arr[i]=sc.nextInt();
             hashArr[arr[i]] = i+1;
@@ -31,8 +30,6 @@ public class threeindices
                     c = 1;
                 }
             }
-            // if(c==1)
-            // break;
         }
         if(c == 0)
         System.out.println("No sequence found");
